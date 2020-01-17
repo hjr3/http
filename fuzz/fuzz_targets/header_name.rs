@@ -5,9 +5,7 @@ extern crate http;
 use http::header::*;
 
 fuzz_target!(|data: &[u8]| {
-    if let Ok(s) = std::str::from_utf8(data) {
-        let _ = s.parse::<HeaderName>();
-    }
+    let _ = HeaderName::from_bytes(data);
 });
 
 /*

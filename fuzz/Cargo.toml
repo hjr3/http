@@ -20,5 +20,5 @@ path = ".."
 members = ["."]
 
 [[bin]]
-name = "fuzz_target_1"
-path = "fuzz_targets/fuzz_target_1.rs"
+name = "header_name"
+path = "fuzz_targets/header_name.rs"
